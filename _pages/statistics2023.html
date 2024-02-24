@@ -2,19 +2,20 @@
 layout: default
 title: Statistics 2023
 permalink: /statistics2023
+year: 2023
 ---
-{% assign highlights = site.statistics | where: 'year', '2023' | where: 'highlight', 'true' %}
-{% assign introduction = site.statistics | where: 'year', '2023' | where: 'introduction', 'true' %}
+{% assign highlights = site.statistics | where: 'year', page.year | where: 'highlight', 'true' %}
+{% assign introduction = site.statistics | where: 'year', page.year | where: 'introduction', 'true' %}
 {% assign sections = site.statistics
   | where_exp: 'item', 'item.introduction != true and item.year ==
-2023 and item.highlight != true'
+page.year and item.highlight != true'
   | sort: 'order'
 %}
 
 <section>{{ introduction }}</section>
 
 <div>
-  <h2>2023 Highlights</h2>
+  <h2>{{ page.year }} Highlights</h2>
   <div>
     {% for highlight in highlights %}
       <div>
