@@ -4,14 +4,12 @@ layout: default
 {% assign years = site.statistics | group_by: 'year' | sort: 'name' %}
 
 {% assign highlights = site.statistics | where: 'year', page.year | where: 'highlight', 'true' | sort: 'order' %}
-{% assign introduction = site.statistics | where: 'year', page.year | where: 'introduction', 'true' %}
 {% assign sections = site.statistics
-  | where_exp: 'item', 'item.introduction != true and item.year ==
-page.year and item.highlight != true'
+  | where_exp: 'item', 'item.year == page.year and item.highlight != true'
   | sort: 'order'
 %}
 
-<section>{{ introduction }}</section>
+<section>{{ content }}</section>
 
 <div>
   <h2>{{ page.year }} Highlights</h2>
