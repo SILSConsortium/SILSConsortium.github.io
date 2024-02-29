@@ -1,10 +1,9 @@
 ---
 layout: default
-title: Statistics 2023
-permalink: /statistics2023
-year: 2023
 ---
-{% assign highlights = site.statistics | where: 'year', page.year | where: 'highlight', 'true' %}
+{% assign years = site.statistics | group_by: 'year' | sort: 'name' %}
+
+{% assign highlights = site.statistics | where: 'year', page.year | where: 'highlight', 'true' | sort: 'order' %}
 {% assign introduction = site.statistics | where: 'year', page.year | where: 'introduction', 'true' %}
 {% assign sections = site.statistics
   | where_exp: 'item', 'item.introduction != true and item.year ==
@@ -20,6 +19,9 @@ page.year and item.highlight != true'
     {% for highlight in highlights %}
       <div>
         <div>{{ highlight.title }}</div>
+        {% if highlight.subtitle %}
+          <div>{{ highlight.subtitle }}</div>
+        {% endif %}
         <div>{{ highlight.content }}</div>
       </div>
     {% endfor %}
@@ -32,3 +34,11 @@ page.year and item.highlight != true'
     <div>{{ section.content }}</div>
   </section>
 {% endfor %}
+
+<div class="">
+  More statistics available here:
+  {% for year in years reversed %}
+    <a href="/statistics{{ year.name }}">{{ year.name }}</a>
+    {%- if forloop.last == false %},{% endif %}
+  {% endfor %}
+</div>

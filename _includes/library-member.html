@@ -1,6 +1,14 @@
 <div>
-  <image src="{{ include.logo }}" alt="{{ include.name }} Logo" />
+  {% if include.logo %}
+    <image src="{{ include.logo }}" alt="{{ include.name }} Logo" />
+  {% endif %}
   <h5>{{ include.name }}</h5>
-  <p>{{ include.address }}</p>
-  <a href="{{ include.url }}">{{ include.url }}</a>
+  <p>
+    {{ include.address_line_1 }}
+    <br>
+    {{ include.address_line_2 }}
+  </p>
+  {% if include.url %}
+    <a href="{{ include.url }}">{{ include.url }}</a>
+  {% endif %}
 </div>

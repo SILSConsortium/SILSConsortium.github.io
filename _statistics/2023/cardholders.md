@@ -1,6 +1,7 @@
 ---
-year: 2022
-title: Cardholder
+year: 2023
+title: Cardholders
+order: 1
 ---
 
 The chart below indicates the total number of Saskatchewan residents with library cards and the number of active patrons who have used their public library card at least once in the past two years. The data for active patrons is based on customers whose records show one of the following activities: check out, renewal, check-in, billing, payment, placing a hold, a new registration, or a login authentication to access an electronic resource.
@@ -9,7 +10,7 @@ The chart below indicates the total number of Saskatchewan residents with librar
 ​
 ​Other factors that may have affected registered borrower counts include changes to the definition of a registered borrower, concerted attempts to remove duplicate borrowers from the database, and a change in policy in 2013 which made library cards transferable. This policy change may have resulted in libraries issuing fewer cards as families are now able to share a single card. All factors have remained consistent since September 2015, at which point the library system software changed and more accurate counts became available.
 
-**Data available:** 2009-present; historical data available from government publications: [2009](); [2010-2014]()
+**Data available:** 2009-present; historical data available from government publications: [2009](http://publications.gov.sk.ca/documents/11/76137-stats09.pdf); [2010-2014](http://publications.gov.sk.ca/documents/11/98160-Five%20Year%20Comparative.pdf)
 
 |               | Total   | Active  |
 | ------------- | ------- | ------- |
