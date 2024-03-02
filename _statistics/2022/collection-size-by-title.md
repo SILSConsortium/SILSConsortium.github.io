@@ -1,5 +1,5 @@
 ---
-year: 2023
+year: 2022
 title: Collection Size by Title
 order: 7
 ---
@@ -8,7 +8,6 @@ The chart below provides the number of unique titles in SILS, as well as the num
 
 |      | All Titles | All Physical Titles | All E-Titles | Newly Added Physical Titles | Newly Added E-Titles |
 | ---- | ---------- | ------------------- | ------------ | --------------------------- | -------------------- |
-| 2023 | 1,165,174  | 1,011,870           | 153,304      | 62,800                      | 11,535               |
 | 2022 | 1,242,601  | 1,025,720           | 216,881      | 99,870                      | 21,417               |
 | 2021 | 1,314,878  | 1,030,200           | 284,678      | 85,748                      | 30,775               |
 | 2020 | 1,401,036  | 1,012,887           | 388,149      | 49,462                      | 123,954              |
