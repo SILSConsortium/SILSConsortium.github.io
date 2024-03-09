@@ -1,16 +1,32 @@
 {% assign years = site.statistics | group_by: 'year' | sort: 'name' %}
-<header class="">
-  <a href="/" rel="Home" class="">
-    <img src="" alt="Home">
+<header class="Header">
+  <a href="/" rel="Home" class="Logo">
+    <img src="/assets/sils-logo.png" class="Logo__image" alt="Home">
   </a>
-  <nav class="">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/history">History</a></li>
-      <li><a href="/members">Members</a></li>
-      <li><a href="/statistics{{ years.last.name }}">Statistics</a></li>
-      <li><a href="/services">Services</a></li>
+  <nav class="Navigation">
+    <ul class="Navigation__wrapper">
+      <li class="Navigation__item">
+        <a class="NavLink {% if page.url == '/' %}NavLink--active{% endif %}" href="/">Home</a>
+      </li>
+      <li class="Navigation__item">
+        <a class="NavLink {% if page.url == '/about' %}NavLink--active{% endif %}" href="/about">About</a>
+      </li>
+      <li class="Navigation__item">
+        <a class="NavLink {% if page.url == '/history' %}NavLink--active{% endif %}" href="/history">History</a>
+      </li>
+      <li class="Navigation__item">
+        <a class="NavLink {% if page.url == '/members' %}NavLink--active{% endif %}" href="/members">Members</a>
+      </li>
+      <li class="Navigation__item">
+        <a
+          class="NavLink {% if page.url contains '/statistics' %}NavLink--active{% endif %}"
+          href="/statistics{{ years.last.name }}"
+          >Statistics</a
+        >
+      </li>
+      <li class="Navigation__item">
+        <a class="NavLink {% if page.url == '/services' %}NavLink--active{% endif %}" href="/services">Services</a>
+      </li>
     </ul>
   </nav>
 </header>
