@@ -1,0 +1,56 @@
+/**
+ * Defines List Classes
+ */
+
+ul {
+  padding: 0 calc($unit * 2.5);
+  max-width: calc($unit * 103);
+  margin: 0 auto;
+
+  @media screen and (min-width: $break-desktop) {
+     padding: 0 0 0 $unit;
+  }
+}
+ul li {
+  @extend %font-family-regular;
+  
+  margin: 0 0 calc($unit * 2.5) calc($unit * 2.5);
+  padding: 0 0 0 calc($unit * 2.5);
+
+  font-size: $font-size-16;
+  line-height: 25px;
+  color: $secondary-dark-grey;
+  max-width: calc($unit * 103);
+
+  @media screen and (min-width: $break-desktop) {
+    font-size: $font-size-18;
+    line-height: 28px;
+  }
+}
+li ol {
+  margin-top: calc($unit * 2);
+}
+
+ol {
+  padding: 0 calc($unit * 2);
+  max-width: calc($unit * 103);
+  margin: 0 auto calc($unit * 4);
+
+  @media screen and (min-width: $break-desktop) {
+    padding: 0 0 0 $unit;
+  }
+}
+ol li {
+  margin: 0 0 calc($unit * 2.5) calc($unit * 2.5);
+  padding: 0 0 0 calc($unit * 2.5);
+
+  font-size: $font-size-16;
+  line-height: 25px;
+  color: $secondary-dark-grey;
+  max-width: calc($unit * 103);
+
+  @media screen and (min-width: $break-desktop) {
+    font-size: $font-size-18;
+    line-height: 28px;
+  }
+}

@@ -1,0 +1,85 @@
+/**
+ * Defines Button Classes
+ */
+
+%button {
+  @extend %font-family-semi-bold;
+  color: $tertiary-white;
+  font-size: $font-size-18;
+  letter-spacing: 0.5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $unit*7;
+  padding: 19px $unit*3 16px;
+  margin: 0;
+
+  border-radius: calc($unit * 4);
+  box-shadow: 0 calc($unit / 4) $unit 0 rgba(0, 0, 0, 0.14);
+  background-color: $primary-teal;
+
+  outline: none;
+  border: none;
+
+  &:active, &:hover {
+    color: $tertiary-white;
+    background-color: $button-active-primary-color;
+    cursor: pointer;
+  }
+  &.disabled {
+    pointer-events: none;
+    background-color: $secondary-light-grey;
+    box-shadow: none;
+  }
+
+  .fas {
+    margin-left: $unit;
+  }
+}
+
+
+button, .button, a.button, a.button:visited {
+  @extend %button;
+}
+
+.button-alt, a.button-alt, a.button-alt:visited {
+  @extend %button;
+
+  background-color: $tertiary-blue;
+  &:active, &:hover {
+    color: $tertiary-white;
+    background-color: $button-active-secondary-color;
+  }
+}
+
+.button-img {
+  @extend %button;
+  color: $secondary-dark-grey;
+  background-color: $tertiary-white;
+
+  &:active, &:hover {
+    color: $secondary-dark-grey;
+    background-color: $tertiary-light-grey;
+  }
+  &.disabled {
+    background-color: $tertiary-white;
+    box-shadow: 0 calc($unit / 4) $unit 0 rgba(0, 0, 0, 0.14);
+    pointer-events: none;
+    color: $secondary-light-grey;
+
+    .fa-angle-right {
+      color: $secondary-light-grey;
+    }
+  }
+
+  .fa-angle-right {
+    margin-left: 16px;
+    font-size: 24px;
+    color: $primary-teal;
+  }
+}
+
+a.button, a.button:visited, a.button-alt, a.button-alt:visited, a.button-img, a.button-img:visited {
+  height: $unit*7 - 35px;
+}

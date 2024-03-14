@@ -1,0 +1,24 @@
+@import "./fonts/MyFontsWebfontsKit.scss";
+@import "./lib/normalize.scss";
+
+// Wrap all styles with SILSNG so that they ONLY target anything inside this.
+.SILSNG {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+
+  @import "variables";
+  @import "tabs";
+  @import "layout";
+  @import "text";
+  @import "buttons";
+  @import "lists";
+  @import "tables";
+  @import "inputs";
+
+  font-family: AkagiPro-Book, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}

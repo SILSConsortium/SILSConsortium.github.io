@@ -29,7 +29,7 @@ layout: default
 {% for section in sections %}
   <section>
     <h3>{{ section.title }}</h3>
-    <div>{{ section.content }}</div>
+    <div>{{ section.content | scrollable_tables }}</div>
   </section>
 {% endfor %}
 

@@ -1,6 +1,8 @@
+@import 'sils-style-guide/variables';
+
 // Footer
 .Footer {
-  background-color: #537295;
+  background-color: $primary-dark-blue;
   padding: 1.5rem 2rem;
 }
 .Footer__navigation {}
@@ -18,15 +20,15 @@
   margin: 0 2rem 0 0;
 }
 .FooterNav__link {
-  color: #FFF;
+  color: $tertiary-white;
   font-size: 1.125rem;
 }
 .FooterNav__link--active, .FooterNav__link:hover {
-  color: #C6E2E8;
+  color: $tertiary-light-blue;
   text-decoration: underline;
 }
 .Footer__copyright {
   font-size: 0.875rem;
-  color: #FFF;
+  color: $tertiary-white;
 }
 .Copyright {}

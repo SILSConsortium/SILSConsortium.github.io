@@ -11,5 +11,40 @@ body {
 }
 a, a:link { text-decoration: none; }
 
+@import 'sils-style-guide/style';
+@import 'sils-style-guide/text';
 @import 'header';
-@import 'footer'
+@import 'footer';
+
+.Hero {
+  height: 508px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $tertiary-white-grey;
+  background-image: url(../SILS-homepage-hero-map-2560%402x.jpg);
+  background-size: 1538px 508px;
+  background-position: -80px 0;
+  background-repeat: no-repeat;
+}
+.Hero__wrapper {
+  padding: 1rem;
+}
+.Hero__name {
+  @extend %font-family-semi-bold;
+  font-size: 1.875rem;
+  margin: 0;
+  padding: 2.35rem 0 .5rem;
+  color: $primary-teal;
+}
+.Hero__name--thin {
+  @extend %font-family-regular;
+}
+.Hero__title {
+  font-size: 6.25rem;
+  margin: 0;
+  padding: 0;
+  text-shadow: none;
+}
+.Hero__title--line-one { color: $tertiary-blue; }
+.Hero__title--line-two { color: $primary-blue; }

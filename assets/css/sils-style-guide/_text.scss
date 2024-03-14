@@ -1,0 +1,201 @@
+/**
+ * Defines Font Variables & Classes
+ */
+@import 'variables';
+
+// FONT MIXINS
+%font-family-regular {
+  font-family: AkagiPro-Book, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+%font-family-regular-italic {
+  @extend %font-family-regular;
+  font-family: AkagiPro-BookItalic, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+%font-family-bold {
+  @extend %font-family-regular;
+  font-family: AkagiPro-Bold, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+%font-family-bold-italic {
+ @extend %font-family-regular;
+  font-family: AkagiPro-BoldItalic, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; 
+}
+%font-family-semi-bold {
+  @extend %font-family-regular;
+  font-family: AkagiPro-SemiBold, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+%font-family-black {
+  @extend %font-family-regular;
+  font-family: AkagiPro-Black, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+
+// FONT CLASSES
+h1, .page-title {
+  @extend %font-family-bold;
+  font-size: $font-size-46;
+  letter-spacing: 1.15px;
+  color: $tertiary-white;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.45);
+
+  @media screen and (min-width: $break-desktop) {
+    font-size: $font-size-88;
+    letter-spacing: 2.2px;
+  }
+}
+
+h2, .subtitle {
+  @extend %font-family-black;
+  font-size: $font-size-36;
+  letter-spacing: 0.9px;
+  color: $primary-dark-blue;
+  text-align: center;
+
+  @media screen and (min-width: $break-desktop) {
+    text-align: left;
+    font-size: $font-size-56;
+    letter-spacing: 1.4px;
+  }
+}
+
+h3, .section-title {
+  @extend %font-family-black;
+  font-size: $font-size-32;
+  color: $primary-blue;
+  max-width: calc($unit * 109);
+  margin: 0 auto;
+  padding: 20px;
+
+  @media screen and (min-width: $break-desktop) {
+    font-size: $font-size-44;
+    padding: 0;
+  }
+}
+
+h4, .section-subtitle {
+  @extend %font-family-bold;
+  font-size: $font-size-24;
+  color: $secondary-dark-grey;
+  line-height: 29px;
+  max-width: calc($unit * 109);
+  margin: 0 auto;
+
+  @media screen and (min-width: $break-desktop) {
+    font-size: $font-size-36;
+    line-height: 43px;
+  }
+}
+h5, .section-subheading {
+  @extend %font-family-bold;
+  font-size: $font-size-20;
+  color: $secondary-dark-grey;
+  line-height: 24px;
+
+  @media screen and (min-width: $break-desktop) {
+    font-size: $font-size-22;
+    line-height: 27px;
+  }
+}
+
+.plaintext {
+  font-family: AkagiPro-Book, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: $primary-blue;
+}
+.centered { text-align: center; }
+
+p, .text {
+  @extend %font-family-regular;
+  font-size: $font-size-16;
+  line-height: 25px;
+  color: $secondary-dark-grey;
+  max-width: calc($unit * 109);
+  margin: 0 auto;
+  padding: 20px;
+
+  b, strong, .text--bold {
+    @extend %font-family-bold; 
+  }
+  i, em, .text--italic {
+    @extend %font-family-regular-italic;
+  }
+  b i,
+  i b,
+  em b,
+  b em,
+  strong em,
+  em strong,
+  strong i,
+  i strong,
+  .text--bold .text--italic,
+  .text--italic, .text--bold {
+    @extend %font-family-bold-italic;
+  }
+
+  @media screen and (min-width: $break-desktop) {
+    font-size: $font-size-18;
+    line-height: 28px;
+  }
+}
+
+b, strong, .text--bold {
+  @extend %font-family-bold; 
+}
+i, em, .text--italic {
+  @extend %font-family-regular-italic;
+}
+b i,
+i b,
+em b,
+b em,
+strong em,
+em strong,
+strong i,
+i strong,
+.text--bold .text--italic,
+.text--italic, .text--bold {
+  @extend %font-family-bold-italic;
+}
+
+
+.intro {
+  font-size: $font-size-18;
+  line-height: 28px;
+  color: $secondary-light-grey;
+
+  @media screen and (min-width: $break-desktop) {
+    font-size: $font-size-22;
+    line-height: 32px;
+  }
+}
+
+a, a:visited, .link, .link:visited {
+  @extend %font-family-regular;
+  color: $primary-blue;
+  text-decoration: none;
+
+  &:hover {
+    color: $tertiary-blue;
+  }
+}
+
+.link-alt, .link-alt:visited {
+  @extend %font-family-regular;
+  color: $secondary-medium-grey-2;
+  text-decoration: none;
+
+  &:hover, &.link-alt--active {
+    color: $primary-blue;
+  }
+}
+
+.link-footer, .link-footer:visited {
+  @extend %font-family-regular;
+  color: $tertiary-white;
+  text-decoration: none;
+
+  &:hover, &.link-footer--active {
+    color: $tertiary-light-blue;
+    text-decoration: underline;
+  }  
+}

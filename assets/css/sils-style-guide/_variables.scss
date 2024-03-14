@@ -1,0 +1,60 @@
+/**
+ * Defines Color Variables
+ */
+
+// PRIMARY COLORS
+$primary-teal:              #24DAC6;
+$primary-dark-blue:         #537295;
+$primary-blue:              #2DA1C0;
+
+
+// SECONDARY COLORS
+$secondary-dark-grey:       #37383D;
+$secondary-medium-grey-1:   #949598;
+$secondary-medium-grey-2:   #A9AAAC;
+$secondary-light-grey:      #D7D7D7;
+
+
+// TERTIARY COLORS
+$tertiary-off-white:        #EDF4EC;
+$tertiary-light-grey:       #F2F2F2;
+$tertiary-light-blue:       #C6E2E8;
+$tertiary-blue:             #5DB5CD;
+$tertiary-white:            #FFFFFF;
+$tertiary-white-grey:       #F9F9F9;
+
+
+// NON-MAIN COLORS
+$button-active-primary-color:   #34C0B1;
+$button-active-secondary-color: #5E9EAF;
+
+
+// STATUS COLORS
+$success-background:  #98FB98;
+$success-border:      #32CD32;
+$error-background:    #F08080;
+$error-border:        #DC143C;
+
+
+// LAYOUT UNITS
+$unit:              8px;
+$break-tablet:      720px;
+$break-desktop:     960px;
+$break-desktop-hd:  1320px;
+
+
+// FONT SIZES
+$font-size-88:      88px;
+$font-size-56:      56px;
+$font-size-48:      48px;
+$font-size-46:      46px;
+$font-size-44:      44px;
+$font-size-36:      36px;
+$font-size-32:      32px;
+$font-size-24:      24px;
+$font-size-22:      22px;
+$font-size-20:      20px;
+$font-size-18:      18px;
+$font-size-16:      16px;
+$font-size-14:      14px;
+$font-size-12:      12px;

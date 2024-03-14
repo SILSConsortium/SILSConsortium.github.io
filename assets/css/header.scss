@@ -1,3 +1,6 @@
+@import 'sils-style-guide/variables';
+@import 'sils-style-guide/text';
+
 // Header
 .Header {
   display: flex;
@@ -9,7 +12,7 @@
 // .Logo--image {}
 
 .Navigation {}
-.Navigation__wrapper {
+ul.Navigation__wrapper {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -19,16 +22,18 @@
   justify-content: flex-end;
   align-items: center;
 }
-.Navigation__item {
+.Navigation li.Navigation__item {
   padding: 0;
   margin: 0 1rem 0 0;
 }
 
-.NavLink {
+.Navigation .Navigation__item .NavLink {
+  @extend %font-family-semi-bold;
   font-size: 1.125rem;
-  color: #A9AAAC;
+  color: $secondary-medium-grey-2;
   letter-spacing: 0.67px;
 }
-.NavLink--active, .NavLink:hover {
-  color: #2DA1C0;
+.Navigation .Navigation__item .NavLink--active,
+.Navigation .Navigation__item .NavLink:hover {
+  color: $primary-blue;
 }

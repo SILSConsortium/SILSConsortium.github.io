@@ -1,0 +1,34 @@
+/**
+ * Styles for Tabs
+ */
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  margin: calc($unit * 2) auto;
+  padding: 0;
+  max-width: calc($unit * 109);
+}
+.tabs__item {
+  padding: $unit calc($unit * 1.5);
+  margin: 0;
+  background-color: $secondary-medium-grey-2;
+
+  a, a:visited {
+    color: $tertiary-white;
+  }
+  a.is-active, a:hover, a:visited:hover {
+    color: $secondary-dark-grey;
+  }
+
+  &:first-child {
+    border-radius: calc($unit * 3) 0 0 calc($unit * 3);
+    padding-left: calc($unit * 3)
+  }
+  &:last-child {
+    border-radius: 0 calc($unit * 3) calc($unit * 3) 0;
+    padding-right: calc($unit * 3);
+  }
+}

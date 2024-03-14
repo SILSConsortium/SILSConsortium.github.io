@@ -1,0 +1,55 @@
+/**
+ * Defines Table Classes
+ */
+
+.table-wrapper {
+  overflow-x: scroll;
+  max-width: calc($unit * 120);
+  padding-left: 16px;
+  margin: 0 auto;
+
+  @media screen and (min-width: $break-desktop) {
+    min-width: calc($unit * 94.5);  
+    padding-left: 0;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  white-space: nowrap;
+  margin: calc($unit * 2.5) auto;
+  min-width: calc($unit * 94.5);
+}
+
+
+thead tr {
+  background-color: $tertiary-light-blue;
+}
+thead th {
+  @extend %font-family-semi-bold;
+
+  color: $primary-dark-blue;
+  padding: calc($unit * 2);
+}
+
+
+tbody td {
+  @extend %font-family-regular;
+
+  padding: calc($unit * 2);
+  text-align: center;
+}
+tbody tr:nth-child(2n) {
+  background-color: $tertiary-light-grey;
+}
+tbody tr:nth-child(2n+1) {
+  background-color: $tertiary-white;
+}
+
+
+tbody tr td:first-child, thead tr th:first-child {
+  text-align: center;
+}
+tbody tr td:last-child, thead tr th:last-child {
+  text-align: center;
+}
