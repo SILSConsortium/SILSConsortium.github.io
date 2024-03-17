@@ -2,6 +2,7 @@
 layout: default
 title: History
 permalink: /history
+banner: /assets/bookshelf@2x_0.jpg
 ---
 
 The Saskatchewan Information and Library Services (SILS) Consortium, a not-for-profit corporation, was established in 2009. The overall objective of the consortium was to provide equitable access to library services through one-card access to public library resources for citizens across the province.

@@ -7,9 +7,13 @@
   </head>
   <body class="SILSNG">
     {% include header.html %}
-    <div class="">
-      <!-- INSERT PARALLAX IMAGE HERE -->
-      <h1>{{ page.title }}</h1>
+    <div class="header-image-wrapper">
+      <div class="page__banner">
+        {% if page.banner %}
+          <img src="{{ page.banner }}" alt="{{ page.title }}" class="parallax">
+        {% endif %}
+      </div>
+      <h1 class="page__title">{{ page.title }}</h1>
     </div>
     <section>{{ content }}</section>
     {% include footer.html %}

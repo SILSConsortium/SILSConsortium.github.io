@@ -54,7 +54,7 @@ h5, .section-subheading {
 
   h2, .section__title,
   h3, .sub-heading,
-  h4, .title-heading { padding: 0; }
+  h4, .title-heading { }
 
   padding: calc($unit * 2) 0 calc($unit * 2.5);
   margin: 0 auto;
@@ -67,7 +67,7 @@ h5, .section-subheading {
 
   h2, .section__title,
   h3, .sub-heading,
-  h4, .title-heading { padding: 0; margin-right: calc($unit * 3); }
+  h4, .title-heading { margin-right: calc($unit * 3); }
 
   padding: calc($unit * 2) 0 calc($unit * 2.5);
   max-width: calc($unit * 92.5);

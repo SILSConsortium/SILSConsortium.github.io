@@ -26,6 +26,8 @@ a, a:link { text-decoration: none; }
   background-size: 1538px 508px;
   background-position: -80px 0;
   background-repeat: no-repeat;
+
+  margin-bottom: 2rem;
 }
 .Hero__wrapper {
   padding: 1rem;
@@ -48,3 +50,65 @@ a, a:link { text-decoration: none; }
 }
 .Hero__title--line-one { color: $tertiary-blue; }
 .Hero__title--line-two { color: $primary-blue; }
+
+
+.HomeBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  padding: 0 2rem;
+}
+.HomeBlock__info {
+  max-width: 27.5rem;
+  margin-left: 4rem;
+  margin-right: 1rem;
+}
+.HomeBlock__info h2 { padding: 0 1.25rem; }
+.HomeBlock__info p {
+  font-size: $font-size-22;
+  line-height: 2rem;
+  color: $secondary-medium-grey-1;
+}
+.HomeBlock__info .HomeBlock__learn_more_wrapper {
+  margin: 4px 20px;
+}
+.HomeBlock .HomeBlock__info .HomeBlock__learn_more_wrapper .HomeBlock__learn_more { display: inline-block; height: auto; }
+.HomeBlock__image {
+  width: 552px;
+  height: 292px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.OurHistory .HomeBlock__info { order: 2; }
+.OurHistory .HomeBlock__image { order: 1; }
+
+
+.MemberLibraries {
+  height: 546px;
+  background-image: url(/assets/SILS-homepage-footer-image%402x.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.MemberLibraries .MemberLibraries__title {
+  @extend %font-family-bold;
+  font-size: $font-size-44;
+  letter-spacing: 1px;
+  color: $primary-blue;
+}
+.MemberLibraries .MemberLibraries__action {
+  @extend %font-family-semi-bold;
+  color: $primary-dark-blue;
+  font-size: 72px;
+  margin: 1rem 0 3.5rem;
+}
+.MemberLibraries .button-img { padding: 30px 40px 28px 20px; }

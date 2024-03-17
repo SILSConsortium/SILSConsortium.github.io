@@ -8,6 +8,7 @@ title: Saskatchewan Information Library Services Consortium
     <title>{{ page.title }}</title>
     <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
   </head>
   <body class="SILSNG">
     {% include header.html %}
@@ -23,43 +24,63 @@ title: Saskatchewan Information Library Services Consortium
       </div>
     </div>
     <div class="HomeBlock AboutUs">
-      <div class="">
+      <div class="HomeBlock__info">
         <h2>About Us</h2>
         <p>
           One library card provides residents of Saskatchewan with easy access to materials held at over 300 public
           library branches.
         </p>
-        <a href="/about">Learn More</a>
+        <div class="HomeBlock__learn_more_wrapper">
+          <a href="/about" class="button HomeBlock__learn_more">Learn More</a>
+        </div>
       </div>
-      <!-- PARALLAX IMAGE GOES HERE -->
+      <div class="HomeBlock__image">
+        <img
+          src="{{ '/assets/about-us-image@3x.jpg' | relative_url }}"
+          alt=""
+          class="parallax"
+        >
+      </div>
     </div>
     <div class="HomeBlock OurHistory">
-      <div class="">
+      <div class="HomeBlock__info">
         <h2>Our History</h2>
         <p>
           The Saskatchewan Information and Library Services (SILS) Consortium is a not-for-profit corporation that was
           established in 2009.
         </p>
-        <a href="/history">Learn More</a>
+        <div class="HomeBlock__learn_more_wrapper">
+          <a href="/history" class="button HomeBlock__learn_more">Learn More</a>
+        </div>
       </div>
-      <!-- PARALLAX IMAGE GOES HERE -->
+      <div class="HomeBlock__image">
+        <img src="{{ '/assets/black-white-library@3x.jpg' | relative_url }}" alt="" class="parallax">
+      </div>
     </div>
     <div class="HomeBlock ContactUs">
-      <div class="">
+      <div class="HomeBlock__info">
         <h2>Contact Us</h2>
         <p>Connect with your local library, or contact the SILS Office using a secure web form.</p>
-        <a href="/contact-us">Learn More</a>
+        <div class="HomeBlock__learn_more_wrapper">
+          <a href="/contact-us" class="button HomeBlock__learn_more">Learn More</a>
+        </div>
       </div>
-      <!-- PARALLAX IMAGE GOES HERE -->
+      <div class="HomeBlock__image">
+        <img src="{{ '/assets/contact-image@3x.jpg' | relative_url }}" alt="" class="parallax">
+      </div>
     </div>
     <div class="MemberLibraries">
-      <div class="">Member Libraries</div>
-      <div class="">
+      <div class="MemberLibraries__title">Member Libraries</div>
+      <div class="MemberLibraries__action">
         Search the province-wide catalogue<br>
         or login to your online account.
       </div>
-      <a href="/members">Access our catalogue</a>
+      <a href="/members" class="button-img">Access our catalogue <i class="fas fa-angle-right"></i></a>
     </div>
     {% include footer.html %}
   </body>
+  <script type="text/javascript">
+    let images = document.getElementsByClassName('parallax');
+    new simpleParallax(images);
+  </script>
 </html>

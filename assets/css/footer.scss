@@ -1,34 +1,109 @@
 @import 'sils-style-guide/variables';
 
 // Footer
-.Footer {
+.footer {
   background-color: $primary-dark-blue;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 0;
 }
-.Footer__navigation {}
-.FooterNav {
-  list-style: none;
+.footer__content {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.footer__legal {
+  color: $tertiary-white;
+  order: 2;
+  font-size: 0.875rem;
+}
+.footer__menu_wrapper {
+  order: 1;
   padding: 0;
-  margin: 0 0 1rem;
+  margin: 0;
+}
 
+.footer__menu {
+  order: 1;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
 }
-.FooterNav__item {
+.footer__link {
+  padding: 0;
   margin: 0 2rem 0 0;
 }
-.FooterNav__link {
-  color: $tertiary-white;
+
+
+.header-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.page__banner {
+  height: 18.75rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: $tertiary-white-grey;
+}
+.page__banner .parallax { filter: blur(3px); }
+.page__banner::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(23,218,198,0.65);
+}
+.page__title {
+  position: absolute;
+}
+
+
+.Statistics {
+  background-color: $tertiary-white-grey;
+  padding: 1.5rem 0;
+}
+h2.Statistics__heading {
+  display: block;
+  text-align: center;
+}
+.Statistics__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Statistics__statistics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2.5rem;
+  justify-items: center;
+  align-items: center;
+  max-width: 960px;
+}
+.Statistics__statistic { text-align: center; }
+.Statistics__highlight {
   font-size: 1.125rem;
+  color: #696A6C;
+  margin-bottom: 0.5rem;
 }
-.FooterNav__link--active, .FooterNav__link:hover {
-  color: $tertiary-light-blue;
-  text-decoration: underline;
-}
-.Footer__copyright {
+.Statistics__highlight small {
+  display: block;
   font-size: 0.875rem;
-  color: $tertiary-white;
 }
-.Copyright {}
+.Statistics__number {
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+  color: #000;
+}

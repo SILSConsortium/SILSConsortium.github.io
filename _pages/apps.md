@@ -24,5 +24,5 @@ Access your library barcode:
 
 - No need to panic if you’ve forgotten your library card; the app includes a barcode image you can use to borrow materials.
 
-[![Apple App Store](image "Get it on the Apple App Store")](https://itunes.apple.com/ca/app/sils/id1295204397?mt=8)
-[![Google Play Store](image "Get it on the Google Play Store")](https://play.google.com/store/apps/details?id=ca.sasklibraries.sils.silsandroid&hl=en)
+[![Apple App Store](/assets/app-store.png "Get it on the Apple App Store")](https://itunes.apple.com/ca/app/sils/id1295204397?mt=8)
+[![Google Play Store](/assets/google-play.png "Get it on the Google Play Store")](https://play.google.com/store/apps/details?id=ca.sasklibraries.sils.silsandroid&hl=en)

@@ -11,18 +11,23 @@ layout: default
 
 <section>{{ content }}</section>
 
-<div>
-  <h2>{{ page.year }} Highlights</h2>
-  <div>
-    {% for highlight in highlights %}
-      <div>
-        <div>{{ highlight.title }}</div>
-        {% if highlight.subtitle %}
-          <div>{{ highlight.subtitle }}</div>
-        {% endif %}
-        <div>{{ highlight.content }}</div>
-      </div>
-    {% endfor %}
+<div class="Statistics">
+  <h2 class="Statistics__heading">{{ page.year }} Highlights</h2>
+  <div class="Statistics__wrapper">
+    <div class="Statistics__statistics">
+      {% for highlight in highlights %}
+        <div class="Statistics__statistic">
+          <div class="Statistics__highlight">
+            {{ highlight.title }}
+            {% if highlight.subtitle %}
+              <small>{{ highlight.subtitle }}</small>
+            {% endif %}
+          </div>
+
+          <div class="Statistics__number">{{ highlight.content | strip_html }}</div>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
