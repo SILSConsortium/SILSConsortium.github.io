@@ -1,14 +1,18 @@
-<div>
-  {% if include.logo %}
-    <image src="{{ include.logo }}" alt="{{ include.name }} Logo" />
-  {% endif %}
-  <h5>{{ include.name }}</h5>
-  <p>
-    {{ include.address_line_1 }}
-    <br>
-    {{ include.address_line_2 }}
-  </p>
-  {% if include.url %}
-    <a href="{{ include.url }}">{{ include.url }}</a>
-  {% endif %}
+<div class="library">
+  <div class="library__info">
+    {% if include.logo %}
+      <div class="library__logo">
+        <image src="{{ include.logo }}" alt="{{ include.name }} Logo" height="70" />
+      </div>
+    {% endif %}
+    <h5>{{ include.name }}</h5>
+    <p>
+      {{ include.address_line_1 }}
+      <br>
+      {{ include.address_line_2 }}
+    </p>
+    {% if include.url %}
+      <a href="{{ include.url }}">{{ include.url }}</a>
+    {% endif %}
+  </div>
 </div>

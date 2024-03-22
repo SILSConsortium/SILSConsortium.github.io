@@ -4,17 +4,25 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js"
+      defer=""
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="SILSNG">
     {% include header.html %}
-    <div class="header-image-wrapper">
-      <div class="page__banner">
-        {% if page.banner %}
-          <img src="{{ page.banner }}" alt="{{ page.title }}" class="parallax">
-        {% endif %}
+    {% unless page.hide_header %}
+      <div class="header-image-wrapper">
+        <div class="page__banner">
+          {% if page.banner %}
+            <img src="{{ page.banner }}" alt="{{ page.title }}" class="parallax">
+          {% endif %}
+        </div>
+        <h1 class="page__title">{{ page.title }}</h1>
       </div>
-      <h1 class="page__title">{{ page.title }}</h1>
-    </div>
+    {% endunless %}
     <section>{{ content }}</section>
     {% include footer.html %}
   </body>

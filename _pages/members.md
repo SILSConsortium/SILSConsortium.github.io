@@ -1,5 +1,6 @@
 ---
 title: Members
+hide_header: true
 permalink: /members
 layout: members
 ---

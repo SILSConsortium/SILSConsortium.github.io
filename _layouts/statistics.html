@@ -39,9 +39,11 @@ layout: default
 {% endfor %}
 
 <div class="">
-  More statistics available here:
-  {% for year in years reversed %}
-    <a href="/statistics{{ year.name }}">{{ year.name }}</a>
-    {%- if forloop.last == false %},{% endif %}
-  {% endfor %}
+  <p>
+    More statistics available here:
+    {% for year in years reversed %}
+      <a href="/statistics{{ year.name }}">{{ year.name }}</a>
+      {%- if forloop.last == false %},{% endif %}
+    {% endfor %}
+  </p>
 </div>
