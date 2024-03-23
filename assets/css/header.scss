@@ -28,7 +28,7 @@ ul.Navigation__wrapper {
 }
 
 .Navigation .Navigation__item .NavLink {
-  @extend %font-family-semi-bold;
+  font-family: AkagiPro-SemiBold, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 1.125rem;
   color: $secondary-medium-grey-2;
   letter-spacing: 0.67px;

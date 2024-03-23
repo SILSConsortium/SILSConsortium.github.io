@@ -60,5 +60,5 @@ The following services are not offered directly by SILS, but these services are 
 **Community Net** is an initiative of the provincial government which provides libraries with access to a protected, controlled network environment.
 
 **Cataloguing** is coordinated by the Provincial Library and Literacy Office and performed by staff at designated cataloguing agencies.
-​
+
 **Database authentication** through EZProxy is managed by the Provincial Library and Literacy Office, which contracts with OCLC to host EZProxy.

@@ -62,18 +62,18 @@ a, a:link { text-decoration: none; }
 .Hero__wrapper {
   padding: 1rem;
 }
-.Hero__name {
-  @extend %font-family-semi-bold;
-  font-size: 1.875rem;
+.Hero h4.Hero__name {
+  font-size: 24px;
+  font-family: AkagiPro-SemiBold,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  color: #24DAC6;
   margin: 0;
-  padding: 2.35rem 0 .5rem;
-  color: $primary-teal;
+  padding: 0;
 }
 .Hero__name--thin {
   @extend %font-family-regular;
 }
-.Hero__title {
-  font-size: 6.25rem;
+.Hero h1.Hero__title {
+  font-size: 38px;
   margin: 0;
   padding: 0;
   text-shadow: none;
@@ -86,15 +86,17 @@ a, a:link { text-decoration: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 4rem;
-  padding: 0 2rem;
+  flex-direction: column;
+  margin-bottom: 64px;
 }
 .HomeBlock__info {
-  max-width: 27.5rem;
-  margin-left: 4rem;
-  margin-right: 1rem;
+  order: 2;
+  width: 100%;
 }
-.HomeBlock__info h2 { padding: 0 1.25rem; }
+.HomeBlock__info h2 {
+  text-align: left;
+  padding: 0 20px;
+}
 .HomeBlock__info p {
   font-size: $font-size-22;
   line-height: 2rem;
@@ -105,15 +107,16 @@ a, a:link { text-decoration: none; }
 }
 .HomeBlock .HomeBlock__info .HomeBlock__learn_more_wrapper .HomeBlock__learn_more { display: inline-block; height: auto; }
 .HomeBlock__image {
-  width: 552px;
-  height: 292px;
+  order: 1;
   overflow: hidden;
-
+  width: 264px;
+  height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
 }
+
 .OurHistory .HomeBlock__info { order: 2; }
 .OurHistory .HomeBlock__image { order: 1; }
 
@@ -130,16 +133,18 @@ a, a:link { text-decoration: none; }
   flex-direction: column;
 }
 .MemberLibraries .MemberLibraries__title {
-  @extend %font-family-bold;
-  font-size: $font-size-44;
+  font-size: 24px;
   letter-spacing: 1px;
-  color: $primary-blue;
+  text-align: center;
+  color: #2da1c0;
+  font-family: AkagiPro-Bold,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 .MemberLibraries .MemberLibraries__action {
-  @extend %font-family-semi-bold;
-  color: $primary-dark-blue;
-  font-size: 72px;
-  margin: 1rem 0 3.5rem;
+  text-align: center;
+  font-size: 36px;
+  color: #537295;
+  font-family: AkagiPro-SemiBold,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  margin: 16px 0 56px 0;
 }
 .MemberLibraries .button-img { padding: 20px 20px 18px 20px; }
 
@@ -250,6 +255,22 @@ h2.Statistics__heading {
 
 
 @media screen and (min-width: $break-tablet) {
+  .HomeBlock {
+    flex-direction: row;
+  }
+  .HomeBlock__info {
+    order: 1;
+    max-width: 246px;
+    margin-left: 24px;
+    margin-right: 8px;
+    text-align: left;
+  }
+  .HomeBlock__image {
+    order: 2;
+    width: 427px;
+    height: 226px;
+  }
+
   .library-member .libraries .library {
     display: flex;
     align-items: center;
@@ -274,6 +295,25 @@ h2.Statistics__heading {
 }
 
 @media screen and (min-width: $break-desktop) {
+  .Hero h1.Hero__title {
+    font-size: 100px;
+  }
+  .Hero h4.Hero__name {
+    font-size: 30px;
+    margin: 0;
+    padding: 40px 0 8px;
+  }
+
+  .HomeBlock__info {
+    max-width: 440px;
+    margin-left: 64px;
+    margin-right: 16px;
+  }
+  .HomeBlock__image {
+    width: 552px;
+    height: 292px;
+  }
+
   .header-libraries {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -288,10 +328,35 @@ h2.Statistics__heading {
     margin-bottom: 0;
   }
 
+  .HomeBlock__image {
+    width: 552px;
+    height: 292px;
+  }
+
+  .MemberLibraries .MemberLibraries__title {
+    font-size: 44px;
+  }
+  .MemberLibraries .MemberLibraries__action {
+    font-size: 72px;
+  }
 }
 
 @media screen and (min-width: $break-desktop-hd) {
+  .Hero {
+    height: 844px;
+    background-size: cover;
+    background-position: 0 0;
+  }
+
   .library-member .libraries {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .HomeBlock__image {
+    width: 635px;
+    height: 336px;
+  }
+  .HomeBlock__info {
+    margin-left: 96px;
+    margin-right: 24px;
   }
 }

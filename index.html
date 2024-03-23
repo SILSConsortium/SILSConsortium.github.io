@@ -6,7 +6,7 @@ title: Saskatchewan Information Library Services Consortium
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
@@ -30,112 +30,114 @@ title: Saskatchewan Information Library Services Consortium
         </h1>
       </div>
     </div>
-    <div class="HomeBlock AboutUs">
-      <div class="HomeBlock__info">
-        <h2>About Us</h2>
-        <p>
-          One library card provides residents of Saskatchewan with easy access to materials held at over 300 public
-          library branches.
-        </p>
-        <div class="HomeBlock__learn_more_wrapper">
-          <a href="/about" class="button HomeBlock__learn_more">Learn More</a>
+    <div class="content-wrapper">
+      <div class="HomeBlock AboutUs">
+        <div class="HomeBlock__info">
+          <h2>About Us</h2>
+          <p>
+            One library card provides residents of Saskatchewan with easy access to materials held at over 300 public
+            library branches.
+          </p>
+          <div class="HomeBlock__learn_more_wrapper">
+            <a href="/about" class="button HomeBlock__learn_more">Learn More</a>
+          </div>
+        </div>
+        <div class="HomeBlock__image">
+          <picture class="parallax">
+            <source
+              srcset="/assets/desktop_hd/about-us-image%403x.jpg 1x, /assets/desktop_hd_2x/about-us-image%403x.jpg 2x"
+              media="(min-width: 1320px)"
+              type="image/jpeg"
+            >
+            <source
+              srcset="/assets/desktop/about-us-image%403x.jpg 1x, /assets/desktop_2x/about-us-image%403x.jpg 2x"
+              media="(min-width: 960px)"
+              type="image/jpeg"
+            >
+            <source
+              srcset="/assets/tablet/about-us-image%403x.jpg 1x, /assets/tablet_2x/about-us-image%403x.jpg 2x"
+              media="(min-width: 720px)"
+              type="image/jpeg"
+            >
+            <source
+              srcset="/assets/mobile/about-us-image%403x.jpg 1x, /assets/mobile_2x/about-us-image%403x.jpg 2x, /assets/mobile_3x/about-us-image%403x.jpg 3x"
+              media="(min-width: 0px)"
+              type="image/jpeg"
+            >
+            <img src="/assets/desktop_hd/about-us-image%403x.jpg" alt="" typeof="foaf:Image">
+          </picture>
         </div>
       </div>
-      <div class="HomeBlock__image">
-        <picture class="parallax">
-          <source
-            srcset="/assets/desktop_hd/about-us-image%403x.jpg 1x, /assets/desktop_hd_2x/about-us-image%403x.jpg 2x"
-            media="(min-width: 1320px)"
-            type="image/jpeg"
-          >
-          <source
-            srcset="/assets/desktop/about-us-image%403x.jpg 1x, /assets/desktop_2x/about-us-image%403x.jpg 2x"
-            media="(min-width: 960px)"
-            type="image/jpeg"
-          >
-          <source
-            srcset="/assets/tablet/about-us-image%403x.jpg 1x, /assets/tablet_2x/about-us-image%403x.jpg 2x"
-            media="(min-width: 720px)"
-            type="image/jpeg"
-          >
-          <source
-            srcset="/assets/mobile/about-us-image%403x.jpg 1x, /assets/mobile_2x/about-us-image%403x.jpg 2x, /assets/mobile_3x/about-us-image%403x.jpg 3x"
-            media="(min-width: 0px)"
-            type="image/jpeg"
-          >
-          <img src="/assets/desktop_hd/about-us-image%403x.jpg" alt="" typeof="foaf:Image">
-        </picture>
-      </div>
-    </div>
-    <div class="HomeBlock OurHistory">
-      <div class="HomeBlock__info">
-        <h2>Our History</h2>
-        <p>
-          The Saskatchewan Information and Library Services (SILS) Consortium is a not-for-profit corporation that was
-          established in 2009.
-        </p>
-        <div class="HomeBlock__learn_more_wrapper">
-          <a href="/history" class="button HomeBlock__learn_more">Learn More</a>
+      <div class="HomeBlock OurHistory">
+        <div class="HomeBlock__info">
+          <h2>Our History</h2>
+          <p>
+            The Saskatchewan Information and Library Services (SILS) Consortium is a not-for-profit corporation that was
+            established in 2009.
+          </p>
+          <div class="HomeBlock__learn_more_wrapper">
+            <a href="/history" class="button HomeBlock__learn_more">Learn More</a>
+          </div>
+        </div>
+        <div class="HomeBlock__image">
+          <picture class="parallax">
+            <source
+              srcset="/assets/desktop_hd/black-white-library%403x.jpg 1x, /assets/desktop_hd_2x/black-white-library%403x.jpg 2x"
+              media="(min-width: 1320px)"
+              type="image/jpeg"
+            >
+            <source
+              srcset="/assets/desktop/black-white-library%403x.jpg 1x, /assets/desktop_2x/black-white-library%403x.jpg 2x"
+              media="(min-width: 960px)"
+              type="image/jpeg"
+            >
+            <source
+              srcset="/assets/tablet/black-white-library%403x.jpg 1x, /assets/tablet_2x/black-white-library%403x.jpg 2x"
+              media="(min-width: 720px)"
+              type="image/jpeg"
+            >
+            <source
+              srcset="/assets/mobile/black-white-library%403x.jpg 1x, /assets/mobile_2x/black-white-library%403x.jpg 2x, /assets/mobile_3x/black-white-library%403x.jpg 3x"
+              media="(min-width: 0px)"
+              type="image/jpeg"
+            >
+            <img src="/assets/desktop_hd/black-white-library%403x.jpg" alt="" typeof="foaf:Image">
+          </picture>
         </div>
       </div>
-      <div class="HomeBlock__image">
-        <picture class="parallax">
-          <source
-            srcset="/assets/desktop_hd/black-white-library%403x.jpg 1x, /assets/desktop_hd_2x/black-white-library%403x.jpg 2x"
-            media="(min-width: 1320px)"
-            type="image/jpeg"
-          >
-          <source
-            srcset="/assets/desktop/black-white-library%403x.jpg 1x, /assets/desktop_2x/black-white-library%403x.jpg 2x"
-            media="(min-width: 960px)"
-            type="image/jpeg"
-          >
-          <source
-            srcset="/assets/tablet/black-white-library%403x.jpg 1x, /assets/tablet_2x/black-white-library%403x.jpg 2x"
-            media="(min-width: 720px)"
-            type="image/jpeg"
-          >
-          <source
-            srcset="/assets/mobile/black-white-library%403x.jpg 1x, /assets/mobile_2x/black-white-library%403x.jpg 2x, /assets/mobile_3x/black-white-library%403x.jpg 3x"
-            media="(min-width: 0px)"
-            type="image/jpeg"
-          >
-          <img src="/assets/desktop_hd/black-white-library%403x.jpg" alt="" typeof="foaf:Image">
-        </picture>
-      </div>
-    </div>
-    <div class="HomeBlock ContactUs">
-      <div class="HomeBlock__info">
-        <h2>Contact Us</h2>
-        <p>Connect with your local library, or contact the SILS Office using a secure web form.</p>
-        <div class="HomeBlock__learn_more_wrapper">
-          <a href="/contact-us" class="button HomeBlock__learn_more">Learn More</a>
+      <div class="HomeBlock ContactUs">
+        <div class="HomeBlock__info">
+          <h2>Contact Us</h2>
+          <p>Connect with your local library, or contact the SILS Office using a secure web form.</p>
+          <div class="HomeBlock__learn_more_wrapper">
+            <a href="/contact-us" class="button HomeBlock__learn_more">Learn More</a>
+          </div>
         </div>
-      </div>
-      <div class="HomeBlock__image">
-        <picture class="parallax">
-          <source
-            srcset="/assets/desktop_hd/contact-image%403x.jpg 1x, /assets/desktop_hd_2x/contact-image%403x.jpg 2x"
-            media="(min-width: 1320px)"
-            type="image/jpeg"
-          >
-          <source
-            srcset="/assets/desktop/contact-image%403x.jpg 1x, /assets/desktop_2x/contact-image%403x.jpg 2x"
-            media="(min-width: 960px)"
-            type="image/jpeg"
-          >
-          <source
-            srcset="/assets/tablet/contact-image%403x.jpg 1x, /assets/tablet_2x/contact-image%403x.jpg 2x"
-            media="(min-width: 720px)"
-            type="image/jpeg"
-          >
-          <source
-            srcset="/assets/mobile/contact-image%403x.jpg 1x, /assets/mobile_2x/contact-image%403x.jpg 2x, /assets/mobile_3x/contact-image%403x.jpg 3x"
-            media="(min-width: 0px)"
-            type="image/jpeg"
-          >
-          <img src="/assets/desktop_hd/contact-image%403x.jpg" alt="" typeof="foaf:Image">
-        </picture>
+        <div class="HomeBlock__image">
+          <picture class="parallax">
+            <source
+              srcset="/assets/desktop_hd/contact-image%403x.jpg 1x, /assets/desktop_hd_2x/contact-image%403x.jpg 2x"
+              media="(min-width: 1320px)"
+              type="image/jpeg"
+            >
+            <source
+              srcset="/assets/desktop/contact-image%403x.jpg 1x, /assets/desktop_2x/contact-image%403x.jpg 2x"
+              media="(min-width: 960px)"
+              type="image/jpeg"
+            >
+            <source
+              srcset="/assets/tablet/contact-image%403x.jpg 1x, /assets/tablet_2x/contact-image%403x.jpg 2x"
+              media="(min-width: 720px)"
+              type="image/jpeg"
+            >
+            <source
+              srcset="/assets/mobile/contact-image%403x.jpg 1x, /assets/mobile_2x/contact-image%403x.jpg 2x, /assets/mobile_3x/contact-image%403x.jpg 3x"
+              media="(min-width: 0px)"
+              type="image/jpeg"
+            >
+            <img src="/assets/desktop_hd/contact-image%403x.jpg" alt="" typeof="foaf:Image">
+          </picture>
+        </div>
       </div>
     </div>
     <div class="MemberLibraries">
