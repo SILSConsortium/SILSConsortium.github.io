@@ -5,6 +5,7 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js"
       defer=""
@@ -17,7 +18,31 @@
       <div class="header-image-wrapper">
         <div class="page__banner">
           {% if page.banner %}
-            <img src="{{ page.banner }}" alt="{{ page.title }}" class="parallax">
+            <div class="parallax">
+              <picture>
+                <source
+                  srcset="/assets/desktop_hd/{{ page.banner }} 1x, /assets/desktop_hd_2x/{{ page.banner }} 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1320px)"
+                >
+                <source
+                  srcset="/assets/desktop/{{ page.banner }} 1x, /assets/desktop_2x/{{ page.banner }} 2x"
+                  type="image/jpeg"
+                  media="(min-width: 960px)"
+                >
+                <source
+                  srcset="/assets/tablet/{{ page.banner }} 1x, /assets/tablet_2x/{{ page.banner }} 2x"
+                  type="image/jpeg"
+                  media="(min-width: 720px)"
+                >
+                <source
+                  srcset="/assets/mobile/{{ page.banner }} 1x, /assets/mobile_2x/{{ page.banner }} 2x, /assets/mobile_3x/{{ page.banner }} 3x"
+                  type="image/jpeg"
+                  media="(min-width: 0px)"
+                >
+                <img src="/assets/desktop_hd/{{ page.banner }}" alt="" type="foaf:Image">
+              </picture>
+            </div>
           {% endif %}
         </div>
         <h1 class="page__title">{{ page.title }}</h1>
@@ -26,4 +51,9 @@
     <section>{{ content }}</section>
     {% include footer.html %}
   </body>
+  <script type="text/javascript">
+    var rellax = new Rellax('.parallax', {
+      center: true,
+    });
+  </script>
 </html>

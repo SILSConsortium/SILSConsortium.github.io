@@ -2,7 +2,7 @@
 title: Services
 layout: default
 permalink: /services
-banner: /assets/group-with-computers@2x.jpg
+banner: group-with-computers@2x.jpg
 ---
 
 This is an introduction to the technology services offered by SILS. These services are delivered by the SILS Office and have been approved by the SILS Board.

@@ -15,6 +15,37 @@ a, a:link { text-decoration: none; }
 @import 'header';
 @import 'footer';
 
+.header-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.page__banner {
+  height: 5.625rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: $tertiary-white-grey;
+}
+.page__banner img { margin-top: -100px; }
+.page__banner .parallax { filter: blur(3px); }
+.page__banner::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(23,218,198,0.65);
+}
+.page__title {
+  position: absolute;
+}
+
+
 .Hero {
   height: 508px;
   display: flex;
@@ -110,7 +141,7 @@ a, a:link { text-decoration: none; }
   font-size: 72px;
   margin: 1rem 0 3.5rem;
 }
-.MemberLibraries .button-img { padding: 30px 20px 28px 20px; }
+.MemberLibraries .button-img { padding: 20px 20px 18px 20px; }
 
 
 .header-libraries {
@@ -236,6 +267,10 @@ h2.Statistics__heading {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
+
+  .page__banner {
+    height: 18.75rem;
+  }
 }
 
 @media screen and (min-width: $break-desktop) {
@@ -252,6 +287,7 @@ h2.Statistics__heading {
     padding: 52px 0 0;
     margin-bottom: 0;
   }
+
 }
 
 @media screen and (min-width: $break-desktop-hd) {

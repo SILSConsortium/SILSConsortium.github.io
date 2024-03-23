@@ -8,7 +8,7 @@ title: Saskatchewan Information Library Services Consortium
     <title>{{ page.title }}</title>
     <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <script
@@ -42,11 +42,29 @@ title: Saskatchewan Information Library Services Consortium
         </div>
       </div>
       <div class="HomeBlock__image">
-        <img
-          src="{{ '/assets/about-us-image@3x.jpg' | relative_url }}"
-          alt=""
-          class="parallax"
-        >
+        <picture class="parallax">
+          <source
+            srcset="/assets/desktop_hd/about-us-image%403x.jpg 1x, /assets/desktop_hd_2x/about-us-image%403x.jpg 2x"
+            media="(min-width: 1320px)"
+            type="image/jpeg"
+          >
+          <source
+            srcset="/assets/desktop/about-us-image%403x.jpg 1x, /assets/desktop_2x/about-us-image%403x.jpg 2x"
+            media="(min-width: 960px)"
+            type="image/jpeg"
+          >
+          <source
+            srcset="/assets/tablet/about-us-image%403x.jpg 1x, /assets/tablet_2x/about-us-image%403x.jpg 2x"
+            media="(min-width: 720px)"
+            type="image/jpeg"
+          >
+          <source
+            srcset="/assets/mobile/about-us-image%403x.jpg 1x, /assets/mobile_2x/about-us-image%403x.jpg 2x, /assets/mobile_3x/about-us-image%403x.jpg 3x"
+            media="(min-width: 0px)"
+            type="image/jpeg"
+          >
+          <img src="/assets/desktop_hd/about-us-image%403x.jpg" alt="" typeof="foaf:Image">
+        </picture>
       </div>
     </div>
     <div class="HomeBlock OurHistory">
@@ -61,7 +79,29 @@ title: Saskatchewan Information Library Services Consortium
         </div>
       </div>
       <div class="HomeBlock__image">
-        <img src="{{ '/assets/black-white-library@3x.jpg' | relative_url }}" alt="" class="parallax">
+        <picture class="parallax">
+          <source
+            srcset="/assets/desktop_hd/black-white-library%403x.jpg 1x, /assets/desktop_hd_2x/black-white-library%403x.jpg 2x"
+            media="(min-width: 1320px)"
+            type="image/jpeg"
+          >
+          <source
+            srcset="/assets/desktop/black-white-library%403x.jpg 1x, /assets/desktop_2x/black-white-library%403x.jpg 2x"
+            media="(min-width: 960px)"
+            type="image/jpeg"
+          >
+          <source
+            srcset="/assets/tablet/black-white-library%403x.jpg 1x, /assets/tablet_2x/black-white-library%403x.jpg 2x"
+            media="(min-width: 720px)"
+            type="image/jpeg"
+          >
+          <source
+            srcset="/assets/mobile/black-white-library%403x.jpg 1x, /assets/mobile_2x/black-white-library%403x.jpg 2x, /assets/mobile_3x/black-white-library%403x.jpg 3x"
+            media="(min-width: 0px)"
+            type="image/jpeg"
+          >
+          <img src="/assets/desktop_hd/black-white-library%403x.jpg" alt="" typeof="foaf:Image">
+        </picture>
       </div>
     </div>
     <div class="HomeBlock ContactUs">
@@ -73,7 +113,29 @@ title: Saskatchewan Information Library Services Consortium
         </div>
       </div>
       <div class="HomeBlock__image">
-        <img src="{{ '/assets/contact-image@3x.jpg' | relative_url }}" alt="" class="parallax">
+        <picture class="parallax">
+          <source
+            srcset="/assets/desktop_hd/contact-image%403x.jpg 1x, /assets/desktop_hd_2x/contact-image%403x.jpg 2x"
+            media="(min-width: 1320px)"
+            type="image/jpeg"
+          >
+          <source
+            srcset="/assets/desktop/contact-image%403x.jpg 1x, /assets/desktop_2x/contact-image%403x.jpg 2x"
+            media="(min-width: 960px)"
+            type="image/jpeg"
+          >
+          <source
+            srcset="/assets/tablet/contact-image%403x.jpg 1x, /assets/tablet_2x/contact-image%403x.jpg 2x"
+            media="(min-width: 720px)"
+            type="image/jpeg"
+          >
+          <source
+            srcset="/assets/mobile/contact-image%403x.jpg 1x, /assets/mobile_2x/contact-image%403x.jpg 2x, /assets/mobile_3x/contact-image%403x.jpg 3x"
+            media="(min-width: 0px)"
+            type="image/jpeg"
+          >
+          <img src="/assets/desktop_hd/contact-image%403x.jpg" alt="" typeof="foaf:Image">
+        </picture>
       </div>
     </div>
     <div class="MemberLibraries">
@@ -87,7 +149,8 @@ title: Saskatchewan Information Library Services Consortium
     {% include footer.html %}
   </body>
   <script type="text/javascript">
-    let images = document.getElementsByClassName('parallax');
-    new simpleParallax(images);
+    var rellax = new Rellax('.parallax', {
+      center: true,
+    });
   </script>
 </html>
