@@ -61,3 +61,4 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - package.json
+  - readme.md
