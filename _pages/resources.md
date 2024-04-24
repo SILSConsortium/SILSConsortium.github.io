@@ -3,4 +3,4 @@ layout: default
 title: Resources
 permalink: /resources
 ---
-Resources has moved! Check 123
+The content on this page has moved to the knowledge base.
