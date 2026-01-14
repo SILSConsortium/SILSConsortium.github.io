@@ -5,7 +5,7 @@ permalink: /about
 banner: Saskatoon-delta@1x_1.jpg
 ---
 
-The Saskatchewan Information & Library Services Consortium (SILS) was formed in 2009 to bring together all 10 public library systems in the province plus the Provincial Library & Literacy Office, a branch of the Ministry of Education, to provide unprecedented access to library resources to Saskatchewan residents and enable members to collaborate on joint projects and purchases that would benefit everyone in the province. Regional, municipal, and northern library system boards are major contributors to SILS. The Government of Saskatchewan also provides support to the consortium, including the service which moves hundreds of bins of library materials around the province every week.
+The Saskatchewan Information & Library Services Consortium (SILS) was formed in 2009 to bring together all the public library systems in the province plus the Provincial Library & Literacy Office, a branch of the Ministry of Education, to provide unprecedented access to library resources to Saskatchewan residents and enable members to collaborate on joint projects and purchases that would benefit everyone in the province. Regional, municipal, and northern library system boards are major contributors to SILS. The Government of Saskatchewan also provides support to the consortium, including the service which moves hundreds of bins of library materials around the province every week.
 
 **ONE PROVINCE, ONE LIBRARY CARD**
 
